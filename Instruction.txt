@@ -1,0 +1,31 @@
+1. Установка необходимых библиотек
+
+	Перед тем как начать, убедитесь, что у вас установлен Python. Откройте терминал или командную строку и выполните следующие команды для установки необходимых библиотек:
+	pip install spotipy google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client
+
+2. Получение API-ключа Spotify
+	Для взаимодействия с API Spotify вам понадобится client_id и client_secret.
+	1.Перейдите на Spotify for Developers Dashboard.
+	2. Войдите в свою учетную запись или создайте её, если у вас её ещё нет.
+	3. Создайте приложение, нажав на кнопку "Create an App".
+	4. Заполните необходимые поля и создайте приложение.
+	5. В приложении найдите Client ID и Client Secret и сохраните их — они понадобятся для кода.
+
+3. Получение учетных данных YouTube API
+	Для работы с API YouTube Music потребуется создать проект в Google Cloud Console и получить файл credentials.json.
+	1. Перейдите в Google Cloud Console.
+	2. Создайте проект (если ещё не создан).
+	3. Перейдите в "APIs & Services" → "Library" и найдите YouTube Data API v3.
+	4. Включите API для вашего проекта.
+	5. Перейдите в "APIs & Services" → "Credentials" и создайте учетные данные (Create Credentials).
+	6. Выберите OAuth client ID.
+	7. Выберите Desktop App в качестве типа приложения.
+	8. Скачайте файл credentials.json и сохраните его в ту же папку, где будет находиться ваш Python-скрипт.
+
+5. Использование скрипта
+	1. Сохраните скрипт в файл с расширением .py, например, SpotifyToYouTube.py.
+	2. Убедитесь, что файл credentials.json находится в той же папке.
+	3. Вставьте ваш client_id и client_secret Spotify, а также ID плейлистов.
+		- Spotify Playlist ID можно получить из ссылки: это часть после playlist/.
+		- YouTube Playlist ID можно получить из ссылки на ваш плейлист (часть после list=).
+	5. Запустите скрипт
