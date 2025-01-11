@@ -1,5 +1,4 @@
 1. Установка необходимых библиотек
-
 	Перед тем как начать, убедитесь, что у вас установлен Python. Откройте терминал или командную строку и выполните следующие команды для установки необходимых библиотек:
 	pip install spotipy google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client
 
