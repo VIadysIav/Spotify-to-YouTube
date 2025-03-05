@@ -11,7 +11,7 @@ from google.auth.transport.requests import Request
 # Конфигурация Spotify API
 SPOTIFY_CLIENT_ID = 'YOUR SPOTIFY CLIENT ID'
 SPOTIFY_CLIENT_SECRET = 'YOUR SPOTIFY_CLIENT_SECRET'
-SPOTIFY_REDIRECT_URI = 'http://localhost:8080'
+SPOTIFY_REDIRECT_URI = 'http://localhost:8888/callback'
 SPOTIFY_SCOPE = 'playlist-read-private'
 
 # Конфигурация YouTube API
